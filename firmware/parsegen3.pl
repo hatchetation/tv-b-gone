@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 foreach $arg (@ARGV) {
-  #print "$arg\n"; 
+  #print "$arg\n";
   if (opendir(DIR, $arg)) {
     @files = readdir( DIR ) or die "Couldn't read from $directory : $!\n+";
    closedir( DIR );
@@ -206,7 +206,7 @@ foreach $arg (@ARGV) {
 
   # divvy it up into 8's and print out hex codes
   for ($i =0; $i < length($bitstring); $i += 8) {
-    $byte = 
+    $byte =
       128 * substr($bitstring, $i, 1) +
 	64 * substr($bitstring, $i+1, 1) +
 	  32 * substr($bitstring, $i+2, 1) +
@@ -225,7 +225,7 @@ foreach $arg (@ARGV) {
     }
   }
   push (@allbitstrings, $bitstring);
-  
+
 }
 
 

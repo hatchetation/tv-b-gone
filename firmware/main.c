@@ -22,28 +22,28 @@ depending on a pulldown resistor on pin B1 !
 
 
 /*
-This project transmits a bunch of TV POWER codes, one right after the other, 
-with a pause in between each.  (To have a visible indication that it is 
-transmitting, it also pulses a visible LED once each time a POWER code is 
-transmitted.)  That is all TV-B-Gone does.  The tricky part of TV-B-Gone 
-was collecting all of the POWER codes, and getting rid of the duplicates and 
-near-duplicates (because if there is a duplicate, then one POWER code will 
-turn a TV off, and the duplicate will turn it on again (which we certainly 
-do not want).  I have compiled the most popular codes with the 
-duplicates eliminated, both for North America (which is the same as Asia, as 
-far as POWER codes are concerned -- even though much of Asia USES PAL video) 
-and for Europe (which works for Australia, New Zealand, the Middle East, and 
+This project transmits a bunch of TV POWER codes, one right after the other,
+with a pause in between each.  (To have a visible indication that it is
+transmitting, it also pulses a visible LED once each time a POWER code is
+transmitted.)  That is all TV-B-Gone does.  The tricky part of TV-B-Gone
+was collecting all of the POWER codes, and getting rid of the duplicates and
+near-duplicates (because if there is a duplicate, then one POWER code will
+turn a TV off, and the duplicate will turn it on again (which we certainly
+do not want).  I have compiled the most popular codes with the
+duplicates eliminated, both for North America (which is the same as Asia, as
+far as POWER codes are concerned -- even though much of Asia USES PAL video)
+and for Europe (which works for Australia, New Zealand, the Middle East, and
 other parts of the world that use PAL video).
 
-Before creating a TV-B-Gone Kit, I originally started this project by hacking 
+Before creating a TV-B-Gone Kit, I originally started this project by hacking
 the MiniPOV kit.  This presents a limitation, based on the size of
-the Atmel ATtiny2313 internal flash memory, which is 2KB.  With 2KB we can only 
+the Atmel ATtiny2313 internal flash memory, which is 2KB.  With 2KB we can only
 fit about 7 POWER codes into the firmware's database of POWER codes.  However,
-the more codes the better! Which is why we chose the ATtiny85 for the 
+the more codes the better! Which is why we chose the ATtiny85 for the
 TV-B-Gone Kit.
 
-This version of the firmware has the most popular 100+ POWER codes for 
-North America and 100+ POWER codes for Europe. You can select which region 
+This version of the firmware has the most popular 100+ POWER codes for
+North America and 100+ POWER codes for Europe. You can select which region
 to use by soldering a 10K pulldown resistor.
 */
 
@@ -60,8 +60,8 @@ The hardware for this project is very simple:
        pin 2   one pin of ceramic resonator MUST be 8.0 mhz
        pin 3   other pin of ceramic resonator
        pin 4   ground
-       pin 5   OC1A - IR emitters, through a '2907 PNP driver that connects 
-               to 4 (or more!) PN2222A drivers, with 1000 ohm base resistor 
+       pin 5   OC1A - IR emitters, through a '2907 PNP driver that connects
+               to 4 (or more!) PN2222A drivers, with 1000 ohm base resistor
                and also connects to programming circuitry
        pin 6   Region selector. Float for US, 10K pulldown for EU,
                also connects to programming circuitry
@@ -69,7 +69,7 @@ The hardware for this project is very simple:
        pin 8   +3-5v DC (such as 2-4 AA batteries!)
     See the schematic for more details.
 
-    This firmware requires using an 8.0MHz ceramic resonator 
+    This firmware requires using an 8.0MHz ceramic resonator
        (since the internal oscillator may not be accurate enough).
 
     IMPORTANT:  to use the ceramic resonator, you must perform the following:
@@ -88,7 +88,7 @@ extern const uint8_t num_NAcodes, num_EUcodes;
    to generate one 'pair' from a long code. Each code has ~50 pairs! */
 void xmitCodeElement(uint16_t ontime, uint16_t offtime, uint8_t PWM_code )
 {
-  // start Timer0 outputting the carrier frequency to IR emitters on and OC0A 
+  // start Timer0 outputting the carrier frequency to IR emitters on and OC0A
   // (PB0, pin 5)
   TCNT0 = 0; // reset the timers so they are aligned
   TIFR = 0;  // clean out the timer flags
@@ -105,14 +105,14 @@ void xmitCodeElement(uint16_t ontime, uint16_t offtime, uint8_t PWM_code )
     PORTB &= ~_BV(IRLED);
   }
 
-  // Now we wait, allowing the PWM hardware to pulse out the carrier 
+  // Now we wait, allowing the PWM hardware to pulse out the carrier
   // frequency for the specified 'on' time
   delay_ten_us(ontime);
-  
+
   // Now we have to turn it off so disable the PWM output
   TCCR0A = 0;
   TCCR0B = 0;
-  // And make sure that the IR LED is off too (since the PWM may have 
+  // And make sure that the IR LED is off too (since the PWM may have
   // been stopped while the LED is on!)
   PORTB |= _BV(IRLED);           // turn off IR LED
 
@@ -136,7 +136,7 @@ uint8_t read_bits(uint8_t count)
 {
   uint8_t i;
   uint8_t tmp=0;
-  
+
   // we need to read back count bytes
   for (i=0; i<count; i++) {
     // check if the 8-bit buffer we have has run out
@@ -152,34 +152,34 @@ uint8_t read_bits(uint8_t count)
     tmp |= (((bits_r >> (bitsleft_r)) & 1) << (count-1-i));
   }
   // return the selected bits in the LSB part of tmp
-  return tmp; 
+  return tmp;
 }
 
 
 /*
-The C compiler creates code that will transfer all constants into RAM when 
-the microcontroller resets.  Since this firmware has a table (powerCodes) 
-that is too large to transfer into RAM, the C compiler needs to be told to 
-keep it in program memory space.  This is accomplished by the macro PROGMEM 
-(this is used in the definition for powerCodes).  Since the C compiler assumes 
+The C compiler creates code that will transfer all constants into RAM when
+the microcontroller resets.  Since this firmware has a table (powerCodes)
+that is too large to transfer into RAM, the C compiler needs to be told to
+keep it in program memory space.  This is accomplished by the macro PROGMEM
+(this is used in the definition for powerCodes).  Since the C compiler assumes
 that constants are in RAM, rather than in program memory, when accessing
-powerCodes, we need to use the pgm_read_word() and pgm_read_byte macros, and 
-we need to use powerCodes as an address.  This is done with PGM_P, defined 
-below.  
-For example, when we start a new powerCode, we first point to it with the 
+powerCodes, we need to use the pgm_read_word() and pgm_read_byte macros, and
+we need to use powerCodes as an address.  This is done with PGM_P, defined
+below.
+For example, when we start a new powerCode, we first point to it with the
 following statement:
     PGM_P thecode_p = pgm_read_word(powerCodes+i);
-The next read from the powerCode is a byte that indicates the carrier 
+The next read from the powerCode is a byte that indicates the carrier
 frequency, read as follows:
       const uint8_t freq = pgm_read_byte(code_ptr++);
 After that is a byte that tells us how many 'onTime/offTime' pairs we have:
       const uint8_t numpairs = pgm_read_byte(code_ptr++);
 The next byte tells us the compression method. Since we are going to use a
-timing table to keep track of how to pulse the LED, and the tables are 
+timing table to keep track of how to pulse the LED, and the tables are
 pretty short (usually only 4-8 entries), we can index into the table with only
 2 to 4 bits. Once we know the bit-packing-size we can decode the pairs
       const uint8_t bitcompression = pgm_read_byte(code_ptr++);
-Subsequent reads from the powerCode are n bits (same as the packing size) 
+Subsequent reads from the powerCode are n bits (same as the packing size)
 that index into another table in ROM that actually stores the on/off times
       const PGM_P time_ptr = (PGM_P)pgm_read_word(code_ptr);
 */
@@ -189,7 +189,7 @@ int main(void) {
   uint16_t ontime, offtime;
   uint8_t i,j, Loop;
   uint8_t region = US;     // by default our code is US
-  
+
   Loop = 0;                // by default we are not going to loop
 
   TCCR1 = 0;		   // Turn off PWM/freq gen, should be off already
@@ -210,8 +210,8 @@ int main(void) {
   // check the reset flags
   if (i & _BV(BORF)) {    // Brownout
     // Flash out an error and go to sleep
-    flashslowLEDx(2);	
-    tvbgone_sleep();  
+    flashslowLEDx(2);
+    tvbgone_sleep();
   }
 
   delay_ten_us(5000);            // Let everything settle for a bit
@@ -225,10 +225,10 @@ int main(void) {
 
   // Tell the user what region we're in  - 3 is US 4 is EU
   quickflashLEDx(3+region);
-  
+
   // Starting execution loop
   delay_ten_us(25000);
-  
+
   // turn on watchdog timer immediately, this protects against
   // a 'stuck' system by resetting it
   wdt_enable(WDTO_8S); // 1 second long timeout
@@ -243,22 +243,22 @@ int main(void) {
     }
 
     // for every POWER code in our collection
-    for(i=0 ; i < j; i++) {   
+    for(i=0 ; i < j; i++) {
       //To keep Watchdog from resetting in middle of code.
       wdt_reset();
 
       // point to next POWER code, from the right database
       if (region == US) {
-	code_ptr = (PGM_P)pgm_read_word(NApowerCodes+i);  
+	code_ptr = (PGM_P)pgm_read_word(NApowerCodes+i);
       } else {
-	code_ptr = (PGM_P)pgm_read_word(EUpowerCodes+i);  
+	code_ptr = (PGM_P)pgm_read_word(EUpowerCodes+i);
       }
 
       // Read the carrier frequency from the first byte of code structure
       const uint8_t freq = pgm_read_byte(code_ptr++);
       // set OCR for Timer1 to output this POWER code's carrier frequency
-      OCR0A = freq; 
-      
+      OCR0A = freq;
+
       // Get the number of pairs, the second byte from the code struct
       const uint8_t numpairs = pgm_read_byte(code_ptr++);
 
@@ -271,17 +271,17 @@ int main(void) {
       const PGM_P time_ptr = (PGM_P)pgm_read_word(code_ptr);
       code_ptr+=2;
 
-      // Transmit all codeElements for this POWER code 
+      // Transmit all codeElements for this POWER code
       // (a codeElement is an onTime and an offTime)
-      // transmitting onTime means pulsing the IR emitters at the carrier 
+      // transmitting onTime means pulsing the IR emitters at the carrier
       // frequency for the length of time specified in onTime
-      // transmitting offTime means no output from the IR emitters for the 
+      // transmitting offTime means no output from the IR emitters for the
       // length of time specified in offTime
 
       // For EACH pair in this code....
       for (uint8_t k=0; k<numpairs; k++) {
 	uint8_t ti;
-	
+
 	// Read the next 'n' bits as indicated by the compression variable
 	// The multiply by 4 because there are 2 timing numbers per pair
 	// and each timing number is one word long, so 4 bytes total!
@@ -292,27 +292,27 @@ int main(void) {
 	offtime = pgm_read_word(time_ptr+ti+2);  // read word 2 - offtime
 
 	// transmit this codeElement (ontime and offtime)
-	xmitCodeElement(ontime, offtime, (freq!=0));  
-      } 
-      
+	xmitCodeElement(ontime, offtime, (freq!=0));
+      }
+
       //Flush remaining bits, so that next code starts
       //with a fresh set of 8 bits.
-      bitsleft_r=0;	
+      bitsleft_r=0;
 
       // delay 250 milliseconds before transmitting next POWER code
       delay_ten_us(25000);
-      
+
       // visible indication that a code has been output.
-      quickflashLED(); 
+      quickflashLED();
     }
   } while (Loop == 1);
-  
+
   // We are done, no need for a watchdog timer anymore
   wdt_disable();
 
   // flash the visible LED on PB0  4 times to indicate that we're done
-  delay_ten_us(65500); // wait maxtime 
-  delay_ten_us(65500); // wait maxtime 
+  delay_ten_us(65500); // wait maxtime
+  delay_ten_us(65500); // wait maxtime
   quickflashLEDx(4);
 
   tvbgone_sleep();
@@ -341,7 +341,7 @@ void tvbgone_sleep( void )
 
 
 // This function delays the specified number of 10 microseconds
-// it is 'hardcoded' and is calibrated by adjusting DELAY_CNT 
+// it is 'hardcoded' and is calibrated by adjusting DELAY_CNT
 // in main.h Unless you are changing the crystal from 8mhz, dont
 // mess with this.
 void delay_ten_us(uint16_t us) {
@@ -387,11 +387,11 @@ void flashslowLEDx( uint8_t num_blinks )
   for(i=0;i<num_blinks;i++)
     {
       // turn on visible LED at PB0 by pulling pin to ground
-      PORTB &= ~_BV(LED);    
+      PORTB &= ~_BV(LED);
       delay_ten_us(50000);         // 500 millisec delay
       wdt_reset();                 // kick the dog
       // turn off visible LED at PB0 by pulling pin to +3V
-      PORTB |= _BV(LED);          
+      PORTB |= _BV(LED);
       delay_ten_us(50000);	   // 500 millisec delay
       wdt_reset();                 // kick the dog
     }
