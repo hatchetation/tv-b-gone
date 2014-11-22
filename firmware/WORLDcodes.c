@@ -39,7 +39,7 @@ const struct IrCode code_na001Code PROGMEM = {
 	freq_to_timerval(57143),
 	52,		// # of pairs
 	2,		// # of bits per index
-	code_na001Times,  
+	code_na001Times,
 	{
 		0xD5,
 		0x41,
@@ -67,7 +67,7 @@ const struct IrCode code_na002Code PROGMEM = {
 	freq_to_timerval(37037),
 	100,		// # of pairs
 	3,		// # of bits per index
-	code_na002Times,  
+	code_na002Times,
 	{
 		0x60,
 		0x80,
@@ -119,7 +119,7 @@ const struct IrCode code_na003Code PROGMEM = {
 	freq_to_timerval(38610),
 	64,		// # of pairs
 	2,		// # of bits per index
-	code_na003Times,  
+	code_na003Times,
 	{
 		0x15,
 		0x5A,
@@ -152,7 +152,7 @@ const struct IrCode code_na004Code PROGMEM = {
 	freq_to_timerval(38610),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x00,
@@ -182,7 +182,7 @@ const struct IrCode code_na005Code PROGMEM = {
 	freq_to_timerval(35714),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_na005Times,  
+	code_na005Times,
 	{
 		0x10,
 		0x92,
@@ -206,7 +206,7 @@ const struct IrCode code_na006Code PROGMEM = {
 	freq_to_timerval(38462),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_na006Times,  
+	code_na006Times,
 	{
 		0x64,
 		0x90,
@@ -247,7 +247,7 @@ const struct IrCode code_na007Code PROGMEM = {
 	freq_to_timerval(39216),
 	34,		// # of pairs
 	3,		// # of bits per index
-	code_na007Times,  
+	code_na007Times,
 	{
 		0x09,
 		0x94,
@@ -275,7 +275,7 @@ const struct IrCode code_na008Code PROGMEM = {
 	freq_to_timerval(38462),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_na008Times,  
+	code_na008Times,
 	{
 		0x64,
 		0x00,
@@ -317,7 +317,7 @@ const struct IrCode code_na009Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x84,
 		0x90,
@@ -346,7 +346,7 @@ const struct IrCode code_na010Code PROGMEM = {
 	freq_to_timerval(38462),
 	52,		// # of pairs
 	2,		// # of bits per index
-	code_na010Times,  
+	code_na010Times,
 	{
 		0xD4,
 		0x00,
@@ -376,7 +376,7 @@ const struct IrCode code_na011Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na011Times,  
+	code_na011Times,
 	{
 		0xA0,
 		0x00,
@@ -406,7 +406,7 @@ const struct IrCode code_na012Code PROGMEM = {
 	freq_to_timerval(38462),
 	52,		// # of pairs
 	3,		// # of bits per index
-	code_na012Times,  
+	code_na012Times,
 	{
 		0x64,
 		0x12,
@@ -442,7 +442,7 @@ const struct IrCode code_na013Code PROGMEM = {
 	freq_to_timerval(38462),
 	48,		// # of pairs
 	3,		// # of bits per index
-	code_na013Times,  
+	code_na013Times,
 	{
 		0x80,
 		0x12,
@@ -480,7 +480,7 @@ const struct IrCode code_na014Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x00,
@@ -515,7 +515,7 @@ const struct IrCode code_na015Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x80,
@@ -543,7 +543,7 @@ const struct IrCode code_na016Code PROGMEM = {
 	freq_to_timerval(34483),
 	34,		// # of pairs
 	2,		// # of bits per index
-	code_na016Times,  
+	code_na016Times,
 	{
 		0x54,
 		0x04,
@@ -568,7 +568,7 @@ const struct IrCode code_na017Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x02,
@@ -598,7 +598,7 @@ const struct IrCode code_na018Code PROGMEM = {
 	freq_to_timerval(38462),
 	136,		// # of pairs
 	3,		// # of bits per index
-	code_na018Times,  
+	code_na018Times,
 	{
 		0x60,
 		0x82,
@@ -664,7 +664,7 @@ const struct IrCode code_na019Code PROGMEM = {
 	freq_to_timerval(38462),
 	100,		// # of pairs
 	3,		// # of bits per index
-	code_na019Times,  
+	code_na019Times,
 	{
 		0x60,
 		0x10,
@@ -719,7 +719,7 @@ const struct IrCode code_na020Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na020Times,  
+	code_na020Times,
 	{
 		0xA0,
 		0x10,
@@ -749,7 +749,7 @@ const struct IrCode code_na021Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na021Times,  
+	code_na021Times,
 	{
 		0x80,
 		0x10,
@@ -780,7 +780,7 @@ const struct IrCode code_na022Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na022Times,  
+	code_na022Times,
 	{
 		0x80,
 		0x02,
@@ -809,7 +809,7 @@ const struct IrCode code_na023Code PROGMEM = {
 	freq_to_timerval(40000),
 	44,		// # of pairs
 	2,		// # of bits per index
-	code_na023Times,  
+	code_na023Times,
 	{
 		0xA1,
 		0x18,
@@ -835,7 +835,7 @@ const struct IrCode code_na024Code PROGMEM = {
 	freq_to_timerval(38462),
 	26,		// # of pairs
 	3,		// # of bits per index
-	code_na024Times,  
+	code_na024Times,
 	{
 		0x69,
 		0x24,
@@ -860,7 +860,7 @@ const struct IrCode code_na025Code PROGMEM = {
 	freq_to_timerval(38462),
 	52,		// # of pairs
 	3,		// # of bits per index
-	code_na025Times,  
+	code_na025Times,
 	{
 		0x64,
 		0x92,
@@ -895,7 +895,7 @@ const struct IrCode code_na026Code PROGMEM = {
 	freq_to_timerval(39216),
 	34,		// # of pairs
 	3,		// # of bits per index
-	code_na026Times,  
+	code_na026Times,
 	{
 		0x09,
 		0x94,
@@ -925,7 +925,7 @@ const struct IrCode code_na027Code PROGMEM = {
 	freq_to_timerval(57143),
 	52,		// # of pairs
 	2,		// # of bits per index
-	code_na001Times,  
+	code_na001Times,
 	{
 		0xC5,
 		0x41,
@@ -952,7 +952,7 @@ const struct IrCode code_na028Code PROGMEM = {
 	freq_to_timerval(38610),
 	36,		// # of pairs
 	2,		// # of bits per index
-	code_na028Times,  
+	code_na028Times,
 	{
 		0xC4,
 		0x45,
@@ -976,7 +976,7 @@ const struct IrCode code_na029Code PROGMEM = {
 	freq_to_timerval(35842),
 	22,		// # of pairs
 	3,		// # of bits per index
-	code_na029Times,  
+	code_na029Times,
 	{
 		0x0C,
 		0x92,
@@ -1004,7 +1004,7 @@ const struct IrCode code_na030Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x80,
 		0x00,
@@ -1034,7 +1034,7 @@ const struct IrCode code_na031Code PROGMEM = {
 	freq_to_timerval(35842),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_na031Times,  
+	code_na031Times,
 	{
 		0x06,
 		0x12,
@@ -1062,7 +1062,7 @@ const struct IrCode code_na032Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x80,
 		0x00,
@@ -1092,7 +1092,7 @@ const struct IrCode code_na033Code PROGMEM = {
 	freq_to_timerval(38462),
 	100,		// # of pairs
 	3,		// # of bits per index
-	code_na033Times,  
+	code_na033Times,
 	{
 		0x60,
 		0x10,
@@ -1150,7 +1150,7 @@ const struct IrCode code_na034Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x00,
@@ -1179,7 +1179,7 @@ const struct IrCode code_na035Code PROGMEM = {
 	freq_to_timerval(41667),
 	22,		// # of pairs
 	2,		// # of bits per index
-	code_na035Times,  
+	code_na035Times,
 	{
 		0x16,
 		0x66,
@@ -1199,7 +1199,7 @@ const struct IrCode code_na036Code PROGMEM = {
 	freq_to_timerval(37037),
 	11,		// # of pairs
 	2,		// # of bits per index
-	code_na036Times,  
+	code_na036Times,
 	{
 		0x15,
 		0x9A,
@@ -1215,7 +1215,7 @@ const struct IrCode code_na037Code PROGMEM = {
 	freq_to_timerval(41667),
 	11,		// # of pairs
 	2,		// # of bits per index
-	code_na037Times,  
+	code_na037Times,
 	{
 		0x80,
 		0x45,
@@ -1237,7 +1237,7 @@ const struct IrCode code_na038Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA4,
 		0x10,
@@ -1264,7 +1264,7 @@ const struct IrCode code_na039Code PROGMEM = {
 	freq_to_timerval(40000),
 	4,		// # of pairs
 	2,		// # of bits per index
-	code_na039Times,  
+	code_na039Times,
 	{
 		0x11,
 	}
@@ -1278,7 +1278,7 @@ const struct IrCode code_na040Code PROGMEM = {
 	freq_to_timerval(40000),
 	8,		// # of pairs
 	2,		// # of bits per index
-	code_na040Times,  
+	code_na040Times,
 	{
 		0x06,
 		0x04,
@@ -1294,7 +1294,7 @@ const struct IrCode code_na041Code PROGMEM = {
 	freq_to_timerval(76923),
 	26,		// # of pairs
 	2,		// # of bits per index
-	code_na041Times,  
+	code_na041Times,
 	{
 		0xE2,
 		0x20,
@@ -1317,7 +1317,7 @@ const struct IrCode code_na042Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na042Times,  
+	code_na042Times,
 	{
 		0xA4,
 		0x80,
@@ -1346,7 +1346,7 @@ const struct IrCode code_na043Code PROGMEM = {
 	freq_to_timerval(40000),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_na043Times,  
+	code_na043Times,
 	{
 		0x15,
 		0x75,
@@ -1368,7 +1368,7 @@ const struct IrCode code_na044Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na044Times,  
+	code_na044Times,
 	{
 		0x84,
 		0x90,
@@ -1399,7 +1399,7 @@ const struct IrCode code_na045Code PROGMEM = {
 	freq_to_timerval(38462),
 	40,		// # of pairs
 	3,		// # of bits per index
-	code_na045Times,  
+	code_na045Times,
 	{
 		0x80,
 		0x90,
@@ -1431,7 +1431,7 @@ const struct IrCode code_na046Code PROGMEM = {
 	freq_to_timerval(29412),
 	23,		// # of pairs
 	3,		// # of bits per index
-	code_na046Times,  
+	code_na046Times,
 	{
 		0x0B,
 		0x12,
@@ -1459,7 +1459,7 @@ const struct IrCode code_na047Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x00,
@@ -1493,7 +1493,7 @@ const struct IrCode code_na048Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na044Times,  
+	code_na044Times,
 	{
 		0x80,
 		0x00,
@@ -1520,7 +1520,7 @@ const struct IrCode code_na049Code PROGMEM = {
 	freq_to_timerval(45455),
 	11,		// # of pairs
 	2,		// # of bits per index
-	code_na049Times,  
+	code_na049Times,
 	{
 		0x14,
 		0x11,
@@ -1537,7 +1537,7 @@ const struct IrCode code_na050Code PROGMEM = {
 	freq_to_timerval(55556),
 	48,		// # of pairs
 	2,		// # of bits per index
-	code_na050Times,  
+	code_na050Times,
 	{
 		0xC0,
 		0x00,
@@ -1568,7 +1568,7 @@ const struct IrCode code_na051Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x10,
@@ -1602,7 +1602,7 @@ const struct IrCode code_na052Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA4,
 		0x90,
@@ -1631,7 +1631,7 @@ const struct IrCode code_na053Code PROGMEM = {
 	freq_to_timerval(55556),
 	30,		// # of pairs
 	2,		// # of bits per index
-	code_na053Times,  
+	code_na053Times,
 	{
 		0x22,
 		0x21,
@@ -1656,7 +1656,7 @@ const struct IrCode code_na054Code PROGMEM = {
 	freq_to_timerval(55556),
 	28,		// # of pairs
 	2,		// # of bits per index
-	code_na053Times,  
+	code_na053Times,
 	{
 		0x22,
 		0x20,
@@ -1677,7 +1677,7 @@ const struct IrCode code_na055Code PROGMEM = {
 	0,              // Non-pulsed code
 	27,		// # of pairs
 	2,		// # of bits per index
-	code_na055Times,  
+	code_na055Times,
 	{
 		0x81,
 		0x51,
@@ -1698,7 +1698,7 @@ const struct IrCode code_na056Code PROGMEM = {
 	freq_to_timerval(37175),
 	8,		// # of pairs
 	2,		// # of bits per index
-	code_na056Times,  
+	code_na056Times,
 	{
 		0x2A,
 		0x57,
@@ -1714,7 +1714,7 @@ const struct IrCode code_na057Code PROGMEM = {
 	freq_to_timerval(40000),
 	14,		// # of pairs
 	2,		// # of bits per index
-	code_na057Times,  
+	code_na057Times,
 	{
 		0x2A,
 		0x5D,
@@ -1733,7 +1733,7 @@ const struct IrCode code_na058Code PROGMEM = {
 	freq_to_timerval(33333),
 	18,		// # of pairs
 	3,		// # of bits per index
-	code_na058Times,  
+	code_na058Times,
 	{
 		0x8D,
 		0xA4,
@@ -1759,7 +1759,7 @@ const struct IrCode code_na059Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA4,
 		0x12,
@@ -1793,7 +1793,7 @@ const struct IrCode code_na060Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x00,
@@ -1827,7 +1827,7 @@ const struct IrCode code_na061Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x00,
@@ -1861,7 +1861,7 @@ const struct IrCode code_na062Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x02,
@@ -1895,7 +1895,7 @@ const struct IrCode code_na063Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA4,
 		0x92,
@@ -1927,7 +1927,7 @@ const struct IrCode code_na064Code PROGMEM = {
 	freq_to_timerval(57143),
 	52,		// # of pairs
 	2,		// # of bits per index
-	code_na001Times,  
+	code_na001Times,
 	{
 		0xC0,
 		0x01,
@@ -1955,7 +1955,7 @@ const struct IrCode code_na065Code PROGMEM = {
 	freq_to_timerval(59172),
 	78,		// # of pairs
 	3,		// # of bits per index
-	code_na065Times,  
+	code_na065Times,
 	{
 		0x84,
 		0x92,
@@ -1999,7 +1999,7 @@ const struct IrCode code_na066Code PROGMEM = {
 	freq_to_timerval(38462),
 	33,		// # of pairs
 	2,		// # of bits per index
-	code_na066Times,  
+	code_na066Times,
 	{
 		0xC0,
 		0x45,
@@ -2027,7 +2027,7 @@ const struct IrCode code_na067Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na044Times,  
+	code_na044Times,
 	{
 		0x80,
 		0x02,
@@ -2056,7 +2056,7 @@ const struct IrCode code_na068Code PROGMEM = {
 	freq_to_timerval(40000),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_na068Times,  
+	code_na068Times,
 	{
 		0x8C,
 		0x30,
@@ -2081,7 +2081,7 @@ const struct IrCode code_na069Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x00,
@@ -2110,7 +2110,7 @@ const struct IrCode code_na070Code PROGMEM = {
 	freq_to_timerval(38462),
 	33,		// # of pairs
 	2,		// # of bits per index
-	code_na070Times,  
+	code_na070Times,
 	{
 		0x40,
 		0x02,
@@ -2131,7 +2131,7 @@ const struct IrCode code_na071Code PROGMEM = {
 	freq_to_timerval(55556),
 	8,		// # of pairs
 	2,		// # of bits per index
-	code_na071Times,  
+	code_na071Times,
 	{
 		0x11,
 		0x40,
@@ -2152,7 +2152,7 @@ const struct IrCode code_na072Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na042Times,  
+	code_na042Times,
 	{
 		0xA0,
 		0x90,
@@ -2186,7 +2186,7 @@ const struct IrCode code_na073Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x82,
@@ -2220,7 +2220,7 @@ const struct IrCode code_na074Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA4,
 		0x00,
@@ -2250,7 +2250,7 @@ const struct IrCode code_na075Code PROGMEM = {
 	freq_to_timerval(41667),
 	52,		// # of pairs
 	3,		// # of bits per index
-	code_na075Times,  
+	code_na075Times,
 	{
 		0x60,
 		0x00,
@@ -2289,7 +2289,7 @@ const struct IrCode code_na076Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x92,
@@ -2322,7 +2322,7 @@ const struct IrCode code_na077Code PROGMEM = {
 	freq_to_timerval(35714),
 	22,		// # of pairs
 	3,		// # of bits per index
-	code_na031Times,  
+	code_na031Times,
 	{
 		0x10,
 		0xA2,
@@ -2344,7 +2344,7 @@ const struct IrCode code_na078Code PROGMEM = {
 	freq_to_timerval(38462),
 	34,		// # of pairs
 	2,		// # of bits per index
-	code_na078Times,  
+	code_na078Times,
 	{
 		0x80,
 		0x45,
@@ -2372,7 +2372,7 @@ const struct IrCode code_na079Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x82,
@@ -2404,7 +2404,7 @@ const struct IrCode code_na080Code PROGMEM = {
 	0,              // Non-pulsed code
 	27,		// # of pairs
 	2,		// # of bits per index
-	code_na055Times,  
+	code_na055Times,
 	{
 		0x81,
 		0x50,
@@ -2425,7 +2425,7 @@ const struct IrCode code_na081Code PROGMEM = {
 	freq_to_timerval(40000),
 	40,		// # of pairs
 	2,		// # of bits per index
-	code_na081Times,  
+	code_na081Times,
 	{
 		0x18,
 		0x46,
@@ -2451,7 +2451,7 @@ const struct IrCode code_na082Code PROGMEM = {
 	freq_to_timerval(35714),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_na082Times,  
+	code_na082Times,
 	{
 		0x0A,
 		0x12,
@@ -2478,7 +2478,7 @@ const struct IrCode code_na083Code PROGMEM = {
 	freq_to_timerval(35714),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_na031Times,  
+	code_na031Times,
 	{
 		0x10,
 		0x92,
@@ -2503,7 +2503,7 @@ const struct IrCode code_na084Code PROGMEM = {
 	freq_to_timerval(37037),
 	100,		// # of pairs
 	3,		// # of bits per index
-	code_na084Times,  
+	code_na084Times,
 	{
 		0x60,
 		0x80,
@@ -2556,7 +2556,7 @@ const struct IrCode code_na085Code PROGMEM = {
 	freq_to_timerval(38462),
 	44,		// # of pairs
 	3,		// # of bits per index
-	code_na085Times,  
+	code_na085Times,
 	{
 		0x64,
 		0x00,
@@ -2588,7 +2588,7 @@ const struct IrCode code_na086Code PROGMEM = {
 	freq_to_timerval(37175),
 	100,		// # of pairs
 	3,		// # of bits per index
-	code_na086Times,  
+	code_na086Times,
 	{
 		0x60,
 		0x82,
@@ -2642,7 +2642,7 @@ const struct IrCode code_na087Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na087Times,  
+	code_na087Times,
 	{
 		0xA0,
 		0x02,
@@ -2676,7 +2676,7 @@ const struct IrCode code_na088Code PROGMEM = {
 	freq_to_timerval(38610),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x80,
 		0x00,
@@ -2711,7 +2711,7 @@ const struct IrCode code_na089Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x02,
@@ -2742,7 +2742,7 @@ const struct IrCode code_na090Code PROGMEM = {
 	freq_to_timerval(35714),
 	20,		// # of pairs
 	3,		// # of bits per index
-	code_na090Times,  
+	code_na090Times,
 	{
 		0x10,
 		0xAB,
@@ -2764,7 +2764,7 @@ const struct IrCode code_na091Code PROGMEM = {
 	freq_to_timerval(58824),
 	52,		// # of pairs
 	2,		// # of bits per index
-	code_na091Times,  
+	code_na091Times,
 	{
 		0xD5,
 		0x41,
@@ -2791,7 +2791,7 @@ const struct IrCode code_na092Code PROGMEM = {
 	freq_to_timerval(38462),
 	68,		// # of pairs
 	2,		// # of bits per index
-	code_na092Times,  
+	code_na092Times,
 	{
 		0xD1,
 		0x00,
@@ -2823,7 +2823,7 @@ const struct IrCode code_na093Code PROGMEM = {
 	freq_to_timerval(38462),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_na093Times,  
+	code_na093Times,
 	{
 		0x60,
 		0x90,
@@ -2867,7 +2867,7 @@ const struct IrCode code_na094Code PROGMEM = {
 	freq_to_timerval(35714),
 	22,		// # of pairs
 	3,		// # of bits per index
-	code_na005Times,  
+	code_na005Times,
 	{
 		0x10,
 		0x94,
@@ -2891,7 +2891,7 @@ const struct IrCode code_na095Code PROGMEM = {
 	freq_to_timerval(38462),
 	40,		// # of pairs
 	3,		// # of bits per index
-	code_na095Times,  
+	code_na095Times,
 	{
 		0x80,
 		0x02,
@@ -2925,7 +2925,7 @@ const struct IrCode code_na096Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x80,
 		0x80,
@@ -2959,7 +2959,7 @@ const struct IrCode code_na097Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x84,
 		0x80,
@@ -2994,7 +2994,7 @@ const struct IrCode code_na098Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x00,
@@ -3028,7 +3028,7 @@ const struct IrCode code_na099Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x80,
 		0x00,
@@ -3057,7 +3057,7 @@ const struct IrCode code_na100Code PROGMEM = {
 	freq_to_timerval(35842),
 	34,		// # of pairs
 	2,		// # of bits per index
-	code_na100Times,  
+	code_na100Times,
 	{
 		0x29,
 		0x59,
@@ -3086,7 +3086,7 @@ const struct IrCode code_na101Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x00,
@@ -3116,7 +3116,7 @@ const struct IrCode code_na102Code PROGMEM = {
 	freq_to_timerval(40000),
 	52,		// # of pairs
 	3,		// # of bits per index
-	code_na102Times,  
+	code_na102Times,
 	{
 		0x64,
 		0x02,
@@ -3155,7 +3155,7 @@ const struct IrCode code_na103Code PROGMEM = {
 	freq_to_timerval(38462),
 	40,		// # of pairs
 	3,		// # of bits per index
-	code_na045Times,  
+	code_na045Times,
 	{
 		0x80,
 		0x02,
@@ -3189,7 +3189,7 @@ const struct IrCode code_na104Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA4,
 		0x00,
@@ -3223,7 +3223,7 @@ const struct IrCode code_na105Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA4,
 		0x80,
@@ -3257,7 +3257,7 @@ const struct IrCode code_na106Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na044Times,  
+	code_na044Times,
 	{
 		0x80,
 		0x02,
@@ -3291,7 +3291,7 @@ const struct IrCode code_na107Code PROGMEM = {
 	freq_to_timerval(38462),
 	40,		// # of pairs
 	3,		// # of bits per index
-	code_na045Times,  
+	code_na045Times,
 	{
 		0x80,
 		0x00,
@@ -3325,7 +3325,7 @@ const struct IrCode code_na108Code PROGMEM = {
 	freq_to_timerval(38462),
 	40,		// # of pairs
 	3,		// # of bits per index
-	code_na045Times,  
+	code_na045Times,
 	{
 		0x80,
 		0x90,
@@ -3356,7 +3356,7 @@ const struct IrCode code_na109Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na109Times,  
+	code_na109Times,
 	{
 		0xA0,
 		0x00,
@@ -3391,7 +3391,7 @@ const struct IrCode code_na110Code PROGMEM = {
 	freq_to_timerval(40161),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA4,
 		0x80,
@@ -3425,7 +3425,7 @@ const struct IrCode code_na111Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na044Times,  
+	code_na044Times,
 	{
 		0x84,
 		0x92,
@@ -3460,7 +3460,7 @@ const struct IrCode code_na112Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA4,
 		0x00,
@@ -3490,7 +3490,7 @@ const struct IrCode code_na113Code PROGMEM = {
 	freq_to_timerval(40000),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_na113Times,  
+	code_na113Times,
 	{
 		0x60,
 		0x00,
@@ -3532,7 +3532,7 @@ const struct IrCode code_na114Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na114Times,  
+	code_na114Times,
 	{
 		0x84,
 		0x10,
@@ -3565,7 +3565,7 @@ const struct IrCode code_na115Code PROGMEM = {
 	freq_to_timerval(40000),
 	52,		// # of pairs
 	3,		// # of bits per index
-	code_na115Times,  
+	code_na115Times,
 	{
 		0x60,
 		0x82,
@@ -3604,7 +3604,7 @@ const struct IrCode code_na116Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x00,
@@ -3635,7 +3635,7 @@ const struct IrCode code_na117Code PROGMEM = {
 	freq_to_timerval(41667),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na117Times,  
+	code_na117Times,
 	{
 		0x84,
 		0x00,
@@ -3669,7 +3669,7 @@ const struct IrCode code_na118Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na044Times,  
+	code_na044Times,
 	{
 		0x84,
 		0x90,
@@ -3700,7 +3700,7 @@ const struct IrCode code_na119Code PROGMEM = {
 	freq_to_timerval(55556),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na119Times,  
+	code_na119Times,
 	{
 		0xA0,
 		0x10,
@@ -3735,7 +3735,7 @@ const struct IrCode code_na120Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x12,
@@ -3769,7 +3769,7 @@ const struct IrCode code_na121Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x00,
@@ -3799,7 +3799,7 @@ const struct IrCode code_na122Code PROGMEM = {
 	freq_to_timerval(52632),
 	48,		// # of pairs
 	3,		// # of bits per index
-	code_na122Times,  
+	code_na122Times,
 	{
 		0x80,
 		0x00,
@@ -3836,7 +3836,7 @@ const struct IrCode code_na123Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA0,
 		0x02,
@@ -3867,7 +3867,7 @@ const struct IrCode code_na124Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na124Times,  
+	code_na124Times,
 	{
 		0x80,
 		0x00,
@@ -3901,7 +3901,7 @@ const struct IrCode code_na125Code PROGMEM = {
 	freq_to_timerval(55556),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na119Times,  
+	code_na119Times,
 	{
 		0xA0,
 		0x02,
@@ -3936,7 +3936,7 @@ const struct IrCode code_na126Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA4,
 		0x10,
@@ -3965,7 +3965,7 @@ const struct IrCode code_na127Code PROGMEM = {
 	freq_to_timerval(25641),
 	8,		// # of pairs
 	2,		// # of bits per index
-	code_na127Times,  
+	code_na127Times,
 	{
 		0x1B,
 		0x59,
@@ -3985,7 +3985,7 @@ const struct IrCode code_na128Code PROGMEM = {
 	freq_to_timerval(40000),
 	52,		// # of pairs
 	3,		// # of bits per index
-	code_na102Times,  
+	code_na102Times,
 	{
 		0x60,
 		0x02,
@@ -4024,7 +4024,7 @@ const struct IrCode code_na129Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na017Times,  
+	code_na017Times,
 	{
 		0xA4,
 		0x92,
@@ -4054,7 +4054,7 @@ const struct IrCode code_na130Code PROGMEM = {
 	freq_to_timerval(37037),
 	52,		// # of pairs
 	3,		// # of bits per index
-	code_na130Times,  
+	code_na130Times,
 	{
 		0x64,
 		0x00,
@@ -4093,7 +4093,7 @@ const struct IrCode code_na131Code PROGMEM = {
 	freq_to_timerval(40000),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na042Times,  
+	code_na042Times,
 	{
 		0xA0,
 		0x10,
@@ -4122,7 +4122,7 @@ const struct IrCode code_na132Code PROGMEM = {
 	freq_to_timerval(83333),
 	32,		// # of pairs
 	2,		// # of bits per index
-	code_na132Times,  
+	code_na132Times,
 	{
 		0x22,
 		0x20,
@@ -4145,7 +4145,7 @@ const struct IrCode code_na133Code PROGMEM = {
 	freq_to_timerval(41667),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_na133Times,  
+	code_na133Times,
 	{
 		0x09,
 		0x24,
@@ -4172,7 +4172,7 @@ const struct IrCode code_na134Code PROGMEM = {
 	freq_to_timerval(40000),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_na113Times,  
+	code_na113Times,
 	{
 		0x60,
 		0x90,
@@ -4213,7 +4213,7 @@ const struct IrCode code_na135Code PROGMEM = {
 	freq_to_timerval(38462),
 	88,		// # of pairs
 	3,		// # of bits per index
-	code_na135Times,  
+	code_na135Times,
 	{
 		0x60,
 		0x12,
@@ -4262,7 +4262,7 @@ const struct IrCode code_na136Code PROGMEM = {
 	freq_to_timerval(38610),
 	88,		// # of pairs
 	3,		// # of bits per index
-	code_na136Times,  
+	code_na136Times,
 	{
 		0x84,
 		0x82,
@@ -4319,7 +4319,7 @@ const struct IrCode code_eu000Code PROGMEM = {
 	freq_to_timerval(35714),
 	40,		// # of pairs
 	3,		// # of bits per index
-	code_eu000Times,  
+	code_eu000Times,
 	{
 		0xA4,
 		0x08,
@@ -4351,7 +4351,7 @@ const struct IrCode code_eu001Code PROGMEM = {
 	freq_to_timerval(30303),
 	31,		// # of pairs
 	3,		// # of bits per index
-	code_eu001Times,  
+	code_eu001Times,
 	{
 		0x04,
 		0x92,
@@ -4377,7 +4377,7 @@ const struct IrCode code_eu002Code PROGMEM = {
 	freq_to_timerval(33333),
 	26,		// # of pairs
 	2,		// # of bits per index
-	code_eu002Times,  
+	code_eu002Times,
 	{
 		0x1A,
 		0x56,
@@ -4403,7 +4403,7 @@ const struct IrCode code_eu003Code PROGMEM = {
 	freq_to_timerval(38462),
 	26,		// # of pairs
 	3,		// # of bits per index
-	code_na000Times,  
+	code_na000Times,
 	{
 		0x68,
 		0x20,
@@ -4430,7 +4430,7 @@ const struct IrCode code_eu004Code PROGMEM = {
 	freq_to_timerval(37037),
 	100,		// # of pairs
 	3,		// # of bits per index
-	code_eu004Times,  
+	code_eu004Times,
 	{
 		0x60,
 		0x80,
@@ -4484,7 +4484,7 @@ const struct IrCode code_eu005Code PROGMEM = {
 	freq_to_timerval(38610),
 	64,		// # of pairs
 	3,		// # of bits per index
-	code_eu005Times,  
+	code_eu005Times,
 	{
 		0x04,
 		0x92,
@@ -4523,7 +4523,7 @@ const struct IrCode code_eu006Code PROGMEM = {
 	freq_to_timerval(38462),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_eu006Times,  
+	code_eu006Times,
 	{
 		0x84,
 		0x90,
@@ -4563,7 +4563,7 @@ const struct IrCode code_eu007Code PROGMEM = {
 	freq_to_timerval(38462),
 	52,		// # of pairs
 	2,		// # of bits per index
-	code_eu007Times,  
+	code_eu007Times,
 	{
 		0xD4,
 		0x00,
@@ -4597,7 +4597,7 @@ const struct IrCode code_eu008Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x00,
@@ -4632,7 +4632,7 @@ const struct IrCode code_eu009Code PROGMEM = {
 	freq_to_timerval(35714),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_na005Times,  
+	code_na005Times,
 	{
 		0x10,
 		0x92,
@@ -4664,7 +4664,7 @@ const struct IrCode code_eu010Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x00,
@@ -4699,7 +4699,7 @@ const struct IrCode code_eu011Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x84,
 		0x00,
@@ -4727,7 +4727,7 @@ const struct IrCode code_eu012Code PROGMEM = {
 	freq_to_timerval(33445),
 	26,		// # of pairs
 	2,		// # of bits per index
-	code_eu012Times,  
+	code_eu012Times,
 	{
 		0x05,
 		0x01,
@@ -4748,7 +4748,7 @@ const struct IrCode code_eu013Code PROGMEM = {
 	freq_to_timerval(38462),
 	88,		// # of pairs
 	2,		// # of bits per index
-	code_eu013Times,  
+	code_eu013Times,
 	{
 		0xD4,
 		0x55,
@@ -4789,7 +4789,7 @@ const struct IrCode code_eu014Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na021Times,  
+	code_na021Times,
 	{
 		0x80,
 		0x10,
@@ -4821,7 +4821,7 @@ const struct IrCode code_eu015Code PROGMEM = {
 	freq_to_timerval(38462),
 	136,		// # of pairs
 	3,		// # of bits per index
-	code_eu015Times,  
+	code_eu015Times,
 	{
 		0x60,
 		0x82,
@@ -4887,7 +4887,7 @@ const struct IrCode code_eu016Code PROGMEM = {
 	freq_to_timerval(33333),
 	34,		// # of pairs
 	2,		// # of bits per index
-	code_eu016Times,  
+	code_eu016Times,
 	{
 		0x68,
 		0x08,
@@ -4910,7 +4910,7 @@ const struct IrCode code_eu017Code PROGMEM = {
 	freq_to_timerval(33333),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu017Times,  
+	code_eu017Times,
 	{
 		0x1A,
 		0x9A,
@@ -4936,7 +4936,7 @@ const struct IrCode code_eu018Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x02,
@@ -4966,7 +4966,7 @@ const struct IrCode code_eu019Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_eu019Times,  
+	code_eu019Times,
 	{
 		0x80,
 		0x80,
@@ -4995,7 +4995,7 @@ const struct IrCode code_eu020Code PROGMEM = {
 	freq_to_timerval(35714),
 	34,		// # of pairs
 	2,		// # of bits per index
-	code_eu020Times,  
+	code_eu020Times,
 	{
 		0x22,
 		0x20,
@@ -5023,7 +5023,7 @@ const struct IrCode code_eu021Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x84,
 		0x80,
@@ -5058,7 +5058,7 @@ const struct IrCode code_eu022Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA4,
 		0x80,
@@ -5093,7 +5093,7 @@ const struct IrCode code_eu023Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na022Times,  
+	code_na022Times,
 	{
 		0x80,
 		0x02,
@@ -5130,7 +5130,7 @@ const struct IrCode code_eu024Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x02,
@@ -5163,7 +5163,7 @@ const struct IrCode code_eu025Code PROGMEM = {
 	freq_to_timerval(31250),
 	21,		// # of pairs
 	3,		// # of bits per index
-	code_eu025Times,  
+	code_eu025Times,
 	{
 		0x47,
 		0x00,
@@ -5184,7 +5184,7 @@ const struct IrCode code_eu026Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu026Times,  
+	code_eu026Times,
 	{
 		0x55,
 		0x40,
@@ -5210,7 +5210,7 @@ const struct IrCode code_eu027Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x82,
@@ -5242,7 +5242,7 @@ const struct IrCode code_eu028Code PROGMEM = {
 	freq_to_timerval(30303),
 	31,		// # of pairs
 	3,		// # of bits per index
-	code_eu028Times,  
+	code_eu028Times,
 	{
 		0x04,
 		0x92,
@@ -5272,7 +5272,7 @@ const struct IrCode code_eu029Code PROGMEM = {
 	freq_to_timerval(34483),
 	46,		// # of pairs
 	3,		// # of bits per index
-	code_eu029Times,  
+	code_eu029Times,
 	{
 		0x47,
 		0x00,
@@ -5310,7 +5310,7 @@ const struct IrCode code_eu030Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x10,
@@ -5340,7 +5340,7 @@ const struct IrCode code_eu031Code PROGMEM = {
 	freq_to_timerval(38462),
 	52,		// # of pairs
 	2,		// # of bits per index
-	code_eu031Times,  
+	code_eu031Times,
 	{
 		0xD5,
 		0x50,
@@ -5367,7 +5367,7 @@ const struct IrCode code_eu032Code PROGMEM = {
 	freq_to_timerval(33333),
 	26,		// # of pairs
 	2,		// # of bits per index
-	code_eu032Times,  
+	code_eu032Times,
 	{
 		0x1A,
 		0x56,
@@ -5388,7 +5388,7 @@ const struct IrCode code_eu033Code PROGMEM = {
 	freq_to_timerval(38462),
 	14,		// # of pairs
 	2,		// # of bits per index
-	code_eu033Times,  
+	code_eu033Times,
 	{
 		0x2A,
 		0x5D,
@@ -5413,7 +5413,7 @@ const struct IrCode code_eu034Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x02,
@@ -5447,7 +5447,7 @@ const struct IrCode code_eu035Code PROGMEM = {
 	freq_to_timerval(35714),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_na005Times,  
+	code_na005Times,
 	{
 		0x10,
 		0x92,
@@ -5477,7 +5477,7 @@ const struct IrCode code_eu036Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA4,
 		0x00,
@@ -5505,7 +5505,7 @@ const struct IrCode code_eu037Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu037Times,  
+	code_eu037Times,
 	{
 		0x45,
 		0x50,
@@ -5524,7 +5524,7 @@ const struct IrCode code_eu038Code PROGMEM = {
 	0,              // Non-pulsed code
 	11,		// # of pairs
 	2,		// # of bits per index
-	code_eu038Times,  
+	code_eu038Times,
 	{
 		0x05,
 		0x60,
@@ -5541,7 +5541,7 @@ const struct IrCode code_eu039Code PROGMEM = {
 	freq_to_timerval(40161),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu039Times,  
+	code_eu039Times,
 	{
 		0x6A,
 		0x82,
@@ -5562,7 +5562,7 @@ const struct IrCode code_eu040Code PROGMEM = {
 	freq_to_timerval(35714),
 	52,		// # of pairs
 	3,		// # of bits per index
-	code_eu040Times,  
+	code_eu040Times,
 	{
 		0x60,
 		0x90,
@@ -5597,7 +5597,7 @@ const struct IrCode code_eu041Code PROGMEM = {
 	freq_to_timerval(33333),
 	28,		// # of pairs
 	3,		// # of bits per index
-	code_eu041Times,  
+	code_eu041Times,
 	{
 		0x0C,
 		0xB2,
@@ -5627,7 +5627,7 @@ const struct IrCode code_eu042Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x80,
 		0x00,
@@ -5654,7 +5654,7 @@ const struct IrCode code_eu043Code PROGMEM = {
 	freq_to_timerval(41667),
 	2,		// # of pairs
 	2,		// # of bits per index
-	code_eu043Times,  
+	code_eu043Times,
 	{
 		0x10,
 	}
@@ -5675,7 +5675,7 @@ const struct IrCode code_eu044Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x02,
@@ -5704,7 +5704,7 @@ const struct IrCode code_eu045Code PROGMEM = {
 	freq_to_timerval(41667),
 	10,		// # of pairs
 	2,		// # of bits per index
-	code_eu045Times,  
+	code_eu045Times,
 	{
 		0x16,
 		0xE5,
@@ -5721,7 +5721,7 @@ const struct IrCode code_eu046Code PROGMEM = {
 	freq_to_timerval(34602),
 	16,		// # of pairs
 	2,		// # of bits per index
-	code_eu046Times,  
+	code_eu046Times,
 	{
 		0x16,
 		0xAB,
@@ -5738,7 +5738,7 @@ const struct IrCode code_eu047Code PROGMEM = {
 	0,              // Non-pulsed code
 	17,		// # of pairs
 	2,		// # of bits per index
-	code_eu047Times,  
+	code_eu047Times,
 	{
 		0x41,
 		0x24,
@@ -5762,7 +5762,7 @@ const struct IrCode code_eu048Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x80,
 		0x00,
@@ -5793,7 +5793,7 @@ const struct IrCode code_eu049Code PROGMEM = {
 	freq_to_timerval(38462),
 	40,		// # of pairs
 	3,		// # of bits per index
-	code_eu049Times,  
+	code_eu049Times,
 	{
 		0x80,
 		0x92,
@@ -5823,7 +5823,7 @@ const struct IrCode code_eu050Code PROGMEM = {
 	freq_to_timerval(33333),
 	48,		// # of pairs
 	3,		// # of bits per index
-	code_eu050Times,  
+	code_eu050Times,
 	{
 		0x60,
 		0x00,
@@ -5856,7 +5856,7 @@ const struct IrCode code_eu051Code PROGMEM = {
 	freq_to_timerval(38462),
 	52,		// # of pairs
 	3,		// # of bits per index
-	code_eu051Times,  
+	code_eu051Times,
 	{
 		0x60,
 		0x82,
@@ -5891,7 +5891,7 @@ const struct IrCode code_eu052Code PROGMEM = {
 	freq_to_timerval(31250),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu052Times,  
+	code_eu052Times,
 	{
 		0x1A,
 		0x9A,
@@ -5915,7 +5915,7 @@ const struct IrCode code_eu053Code PROGMEM = {
 	freq_to_timerval(34483),
 	16,		// # of pairs
 	2,		// # of bits per index
-	code_eu046Times,  
+	code_eu046Times,
 	{
 		0x26,
 		0xAB,
@@ -5935,7 +5935,7 @@ const struct IrCode code_eu054Code PROGMEM = {
 	freq_to_timerval(31250),
 	14,		// # of pairs
 	3,		// # of bits per index
-	code_eu054Times,  
+	code_eu054Times,
 	{
 		0x40,
 		0x1A,
@@ -5960,7 +5960,7 @@ const struct IrCode code_eu055Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x80,
 		0x00,
@@ -5988,7 +5988,7 @@ const struct IrCode code_eu056Code PROGMEM = {
 	freq_to_timerval(38462),
 	4,		// # of pairs
 	2,		// # of bits per index
-	code_eu056Times,  
+	code_eu056Times,
 	{
 		0x26,
 	}
@@ -6010,7 +6010,7 @@ const struct IrCode code_eu057Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x00,
@@ -6044,7 +6044,7 @@ const struct IrCode code_eu058Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x80,
 		0x00,
@@ -6072,7 +6072,7 @@ const struct IrCode code_eu059Code PROGMEM = {
 	freq_to_timerval(41667),
 	4,		// # of pairs
 	2,		// # of bits per index
-	code_eu059Times,  
+	code_eu059Times,
 	{
 		0x26,
 	}
@@ -6088,7 +6088,7 @@ const struct IrCode code_eu060Code PROGMEM = {
 	freq_to_timerval(38462),
 	34,		// # of pairs
 	2,		// # of bits per index
-	code_eu060Times,  
+	code_eu060Times,
 	{
 		0x25,
 		0x59,
@@ -6115,7 +6115,7 @@ const struct IrCode code_eu061Code PROGMEM = {
 	freq_to_timerval(35714),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_na005Times,  
+	code_na005Times,
 	{
 		0x10,
 		0x92,
@@ -6141,7 +6141,7 @@ const struct IrCode code_eu062Code PROGMEM = {
 	freq_to_timerval(38462),
 	34,		// # of pairs
 	2,		// # of bits per index
-	code_eu060Times,  
+	code_eu060Times,
 	{
 		0x25,
 		0x99,
@@ -6169,7 +6169,7 @@ const struct IrCode code_eu063Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x80,
 		0x00,
@@ -6202,7 +6202,7 @@ const struct IrCode code_eu064Code PROGMEM = {
 	freq_to_timerval(30395),
 	29,		// # of pairs
 	3,		// # of bits per index
-	code_eu064Times,  
+	code_eu064Times,
 	{
 		0x04,
 		0x92,
@@ -6230,7 +6230,7 @@ const struct IrCode code_eu065Code PROGMEM = {
 	freq_to_timerval(30303),
 	31,		// # of pairs
 	3,		// # of bits per index
-	code_eu065Times,  
+	code_eu065Times,
 	{
 		0x04,
 		0x92,
@@ -6261,7 +6261,7 @@ const struct IrCode code_eu066Code PROGMEM = {
 	freq_to_timerval(38462),
 	40,		// # of pairs
 	3,		// # of bits per index
-	code_eu049Times,  
+	code_eu049Times,
 	{
 		0x84,
 		0x82,
@@ -6289,7 +6289,7 @@ const struct IrCode code_eu067Code PROGMEM = {
 	freq_to_timerval(38462),
 	12,		// # of pairs
 	2,		// # of bits per index
-	code_eu067Times,  
+	code_eu067Times,
 	{
 		0x41,
 		0x24,
@@ -6309,7 +6309,7 @@ const struct IrCode code_eu068Code PROGMEM = {
 	freq_to_timerval(38610),
 	31,		// # of pairs
 	3,		// # of bits per index
-	code_eu068Times,  
+	code_eu068Times,
 	{
 		0x04,
 		0x92,
@@ -6334,7 +6334,7 @@ const struct IrCode code_eu069Code PROGMEM = {
 	0,              // Non-pulsed code
 	23,		// # of pairs
 	2,		// # of bits per index
-	code_eu069Times,  
+	code_eu069Times,
 	{
 		0x05,
 		0x54,
@@ -6356,7 +6356,7 @@ const struct IrCode code_eu070Code PROGMEM = {
 	0,              // Non-pulsed code
 	23,		// # of pairs
 	2,		// # of bits per index
-	code_eu069Times,  
+	code_eu069Times,
 	{
 		0x14,
 		0x54,
@@ -6375,7 +6375,7 @@ const struct IrCode code_eu071Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu071Times,  
+	code_eu071Times,
 	{
 		0x45,
 		0x44,
@@ -6394,7 +6394,7 @@ const struct IrCode code_eu072Code PROGMEM = {
 	0,              // Non-pulsed code
 	23,		// # of pairs
 	2,		// # of bits per index
-	code_eu072Times,  
+	code_eu072Times,
 	{
 		0x55,
 		0x45,
@@ -6417,7 +6417,7 @@ const struct IrCode code_eu073Code PROGMEM = {
 	freq_to_timerval(34483),
 	16,		// # of pairs
 	2,		// # of bits per index
-	code_eu046Times,  
+	code_eu046Times,
 	{
 		0x19,
 		0x57,
@@ -6439,7 +6439,7 @@ const struct IrCode code_eu074Code PROGMEM = {
 	freq_to_timerval(35714),
 	26,		// # of pairs
 	3,		// # of bits per index
-	code_na031Times,  
+	code_na031Times,
 	{
 		0x04,
 		0x92,
@@ -6462,7 +6462,7 @@ const struct IrCode code_eu075Code PROGMEM = {
 	0,              // Non-pulsed code
 	23,		// # of pairs
 	2,		// # of bits per index
-	code_eu075Times,  
+	code_eu075Times,
 	{
 		0x05,
 		0x45,
@@ -6482,7 +6482,7 @@ const struct IrCode code_eu076Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu076Times,  
+	code_eu076Times,
 	{
 		0x2A,
 		0x9A,
@@ -6508,7 +6508,7 @@ const struct IrCode code_eu077Code PROGMEM = {
 	freq_to_timerval(30303),
 	31,		// # of pairs
 	3,		// # of bits per index
-	code_eu028Times,  
+	code_eu028Times,
 	{
 		0x04,
 		0x92,
@@ -6534,7 +6534,7 @@ const struct IrCode code_eu078Code PROGMEM = {
 	0,              // Non-pulsed code
 	12,		// # of pairs
 	2,		// # of bits per index
-	code_eu078Times,  
+	code_eu078Times,
 	{
 		0x90,
 		0x0D,
@@ -6552,7 +6552,7 @@ const struct IrCode code_eu079Code PROGMEM = {
 	freq_to_timerval(38462),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_eu079Times,  
+	code_eu079Times,
 	{
 		0x60,
 		0x00,
@@ -6593,7 +6593,7 @@ const struct IrCode code_eu080Code PROGMEM = {
 	freq_to_timerval(38462),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_eu080Times,  
+	code_eu080Times,
 	{
 		0x60,
 		0x00,
@@ -6634,7 +6634,7 @@ const struct IrCode code_eu081Code PROGMEM = {
 	freq_to_timerval(38462),
 	80,		// # of pairs
 	2,		// # of bits per index
-	code_eu081Times,  
+	code_eu081Times,
 	{
 		0x1A,
 		0x5A,
@@ -6669,7 +6669,7 @@ const struct IrCode code_eu082Code PROGMEM = {
 	freq_to_timerval(40000),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_eu082Times,  
+	code_eu082Times,
 	{
 		0x60,
 		0x82,
@@ -6710,7 +6710,7 @@ const struct IrCode code_eu083Code PROGMEM = {
 	freq_to_timerval(33333),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_eu083Times,  
+	code_eu083Times,
 	{
 		0x0E,
 		0x38,
@@ -6733,7 +6733,7 @@ const struct IrCode code_eu084Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu084Times,  
+	code_eu084Times,
 	{
 		0x6A,
 		0xA0,
@@ -6754,7 +6754,7 @@ const struct IrCode code_eu085Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_eu085Times,  
+	code_eu085Times,
 	{
 		0x84,
 		0x82,
@@ -6784,7 +6784,7 @@ const struct IrCode code_eu086Code PROGMEM = {
 	freq_to_timerval(33333),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_eu086Times,  
+	code_eu086Times,
 	{
 		0x45,
 		0x86,
@@ -6806,7 +6806,7 @@ const struct IrCode code_eu087Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu087Times,  
+	code_eu087Times,
 	{
 		0x55,
 		0x50,
@@ -6825,7 +6825,7 @@ const struct IrCode code_eu088Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu088Times,  
+	code_eu088Times,
 	{
 		0x45,
 		0x54,
@@ -6849,7 +6849,7 @@ const struct IrCode code_eu089Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na021Times,  
+	code_na021Times,
 	{
 		0x84,
 		0x10,
@@ -6879,7 +6879,7 @@ const struct IrCode code_eu090Code PROGMEM = {
 	0,              // Non-pulsed code
 	29,		// # of pairs
 	3,		// # of bits per index
-	code_eu090Times,  
+	code_eu090Times,
 	{
 		0x60,
 		0x00,
@@ -6904,7 +6904,7 @@ const struct IrCode code_eu091Code PROGMEM = {
 	freq_to_timerval(38462),
 	30,		// # of pairs
 	2,		// # of bits per index
-	code_eu091Times,  
+	code_eu091Times,
 	{
 		0x80,
 		0x01,
@@ -6926,7 +6926,7 @@ const struct IrCode code_eu092Code PROGMEM = {
 	freq_to_timerval(40000),
 	22,		// # of pairs
 	2,		// # of bits per index
-	code_eu092Times,  
+	code_eu092Times,
 	{
 		0x48,
 		0x80,
@@ -6945,7 +6945,7 @@ const struct IrCode code_eu093Code PROGMEM = {
 	freq_to_timerval(35714),
 	11,		// # of pairs
 	2,		// # of bits per index
-	code_eu093Times,  
+	code_eu093Times,
 	{
 		0x15,
 		0x9A,
@@ -6963,7 +6963,7 @@ const struct IrCode code_eu094Code PROGMEM = {
 	0,              // Non-pulsed code
 	29,		// # of pairs
 	3,		// # of bits per index
-	code_eu094Times,  
+	code_eu094Times,
 	{
 		0x60,
 		0x80,
@@ -6991,7 +6991,7 @@ const struct IrCode code_eu095Code PROGMEM = {
 	freq_to_timerval(34483),
 	16,		// # of pairs
 	2,		// # of bits per index
-	code_eu046Times,  
+	code_eu046Times,
 	{
 		0x2A,
 		0xAB,
@@ -7012,7 +7012,7 @@ const struct IrCode code_eu096Code PROGMEM = {
 	freq_to_timerval(38462),
 	30,		// # of pairs
 	3,		// # of bits per index
-	code_eu096Times,  
+	code_eu096Times,
 	{
 		0x04,
 		0x94,
@@ -7041,7 +7041,7 @@ const struct IrCode code_eu097Code PROGMEM = {
 	freq_to_timerval(34483),
 	16,		// # of pairs
 	2,		// # of bits per index
-	code_eu046Times,  
+	code_eu046Times,
 	{
 		0x19,
 		0xAB,
@@ -7059,7 +7059,7 @@ const struct IrCode code_eu098Code PROGMEM = {
 	0,              // Non-pulsed code
 	27,		// # of pairs
 	2,		// # of bits per index
-	code_eu098Times,  
+	code_eu098Times,
 	{
 		0x80,
 		0x01,
@@ -7083,7 +7083,7 @@ const struct IrCode code_eu099Code PROGMEM = {
 	freq_to_timerval(35714),
 	46,		// # of pairs
 	3,		// # of bits per index
-	code_eu099Times,  
+	code_eu099Times,
 	{
 		0x46,
 		0x80,
@@ -7119,7 +7119,7 @@ const struct IrCode code_eu100Code PROGMEM = {
 	0,              // Non-pulsed code
 	27,		// # of pairs
 	2,		// # of bits per index
-	code_eu098Times,  
+	code_eu098Times,
 	{
 		0x80,
 		0x04,
@@ -7142,7 +7142,7 @@ const struct IrCode code_eu101Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu101Times,  
+	code_eu101Times,
 	{
 		0x55,
 		0x50,
@@ -7164,7 +7164,7 @@ const struct IrCode code_eu102Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu087Times,  
+	code_eu087Times,
 	{
 		0x45,
 		0x54,
@@ -7184,7 +7184,7 @@ const struct IrCode code_eu103Code PROGMEM = {
 	freq_to_timerval(34483),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu103Times,  
+	code_eu103Times,
 	{
 		0x29,
 		0x9A,
@@ -7203,7 +7203,7 @@ const struct IrCode code_eu104Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu104Times,  
+	code_eu104Times,
 	{
 		0x44,
 		0x40,
@@ -7228,7 +7228,7 @@ const struct IrCode code_eu105Code PROGMEM = {
 	freq_to_timerval(38610),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na009Times,  
+	code_na009Times,
 	{
 		0x84,
 		0x10,
@@ -7261,7 +7261,7 @@ const struct IrCode code_eu106Code PROGMEM = {
 	freq_to_timerval(38462),
 	59,		// # of pairs
 	3,		// # of bits per index
-	code_eu106Times,  
+	code_eu106Times,
 	{
 		0x0B,
 		0x12,
@@ -7299,7 +7299,7 @@ const struct IrCode code_eu107Code PROGMEM = {
 	freq_to_timerval(33333),
 	24,		// # of pairs
 	3,		// # of bits per index
-	code_eu107Times,  
+	code_eu107Times,
 	{
 		0x62,
 		0x08,
@@ -7321,7 +7321,7 @@ const struct IrCode code_eu108Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu108Times,  
+	code_eu108Times,
 	{
 		0x45,
 		0x54,
@@ -7341,7 +7341,7 @@ const struct IrCode code_eu109Code PROGMEM = {
 	freq_to_timerval(38462),
 	22,		// # of pairs
 	2,		// # of bits per index
-	code_eu109Times,  
+	code_eu109Times,
 	{
 		0x19,
 		0x95,
@@ -7364,7 +7364,7 @@ const struct IrCode code_eu110Code PROGMEM = {
 	freq_to_timerval(38462),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_eu110Times,  
+	code_eu110Times,
 	{
 		0x64,
 		0x10,
@@ -7407,7 +7407,7 @@ const struct IrCode code_eu111Code PROGMEM = {
 	freq_to_timerval(31250),
 	21,		// # of pairs
 	3,		// # of bits per index
-	code_eu111Times,  
+	code_eu111Times,
 	{
 		0x22,
 		0x80,
@@ -7431,7 +7431,7 @@ const struct IrCode code_eu112Code PROGMEM = {
 	freq_to_timerval(38462),
 	40,		// # of pairs
 	3,		// # of bits per index
-	code_eu112Times,  
+	code_eu112Times,
 	{
 		0x80,
 		0x02,
@@ -7466,7 +7466,7 @@ const struct IrCode code_eu113Code PROGMEM = {
 	freq_to_timerval(31250),
 	14,		// # of pairs
 	3,		// # of bits per index
-	code_eu054Times,  
+	code_eu054Times,
 	{
 		0x46,
 		0x80,
@@ -7492,7 +7492,7 @@ const struct IrCode code_eu114Code PROGMEM = {
 	freq_to_timerval(30303),
 	31,		// # of pairs
 	3,		// # of bits per index
-	code_eu028Times,  
+	code_eu028Times,
 	{
 		0x04,
 		0x92,
@@ -7522,7 +7522,7 @@ const struct IrCode code_eu115Code PROGMEM = {
 	freq_to_timerval(58824),
 	77,		// # of pairs
 	3,		// # of bits per index
-	code_eu115Times,  
+	code_eu115Times,
 	{
 		0x84,
 		0x92,
@@ -7565,7 +7565,7 @@ const struct IrCode code_eu116Code PROGMEM = {
 	0,              // Non-pulsed code
 	29,		// # of pairs
 	2,		// # of bits per index
-	code_eu116Times,  
+	code_eu116Times,
 	{
 		0x80,
 		0x01,
@@ -7588,7 +7588,7 @@ const struct IrCode code_eu117Code PROGMEM = {
 	freq_to_timerval(31250),
 	14,		// # of pairs
 	3,		// # of bits per index
-	code_eu117Times,  
+	code_eu117Times,
 	{
 		0x22,
 		0x00,
@@ -7608,7 +7608,7 @@ const struct IrCode code_eu118Code PROGMEM = {
 	freq_to_timerval(34483),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu118Times,  
+	code_eu118Times,
 	{
 		0x2A,
 		0x9A,
@@ -7628,7 +7628,7 @@ const struct IrCode code_eu119Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu119Times,  
+	code_eu119Times,
 	{
 		0x44,
 		0x44,
@@ -7651,7 +7651,7 @@ const struct IrCode code_eu120Code PROGMEM = {
 	freq_to_timerval(38462),
 	82,		// # of pairs
 	3,		// # of bits per index
-	code_eu120Times,  
+	code_eu120Times,
 	{
 		0x09,
 		0x24,
@@ -7700,7 +7700,7 @@ const struct IrCode code_eu121Code PROGMEM = {
 	freq_to_timerval(38462),
 	52,		// # of pairs
 	3,		// # of bits per index
-	code_eu051Times,  
+	code_eu051Times,
 	{
 		0x64,
 		0x00,
@@ -7738,7 +7738,7 @@ const struct IrCode code_eu122Code PROGMEM = {
 	freq_to_timerval(38462),
 	82,		// # of pairs
 	3,		// # of bits per index
-	code_eu120Times,  
+	code_eu120Times,
 	{
 		0x04,
 		0xA4,
@@ -7783,7 +7783,7 @@ const struct IrCode code_eu123Code PROGMEM = {
 	freq_to_timerval(40000),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu123Times,  
+	code_eu123Times,
 	{
 		0x6A,
 		0xA0,
@@ -7804,7 +7804,7 @@ const struct IrCode code_eu124Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_eu124Times,  
+	code_eu124Times,
 	{
 		0x80,
 		0x10,
@@ -7835,7 +7835,7 @@ const struct IrCode code_eu125Code PROGMEM = {
 	freq_to_timerval(38462),
 	68,		// # of pairs
 	3,		// # of bits per index
-	code_eu125Times,  
+	code_eu125Times,
 	{
 		0x84,
 		0x80,
@@ -7881,7 +7881,7 @@ const struct IrCode code_eu126Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x00,
@@ -7912,7 +7912,7 @@ const struct IrCode code_eu127Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu087Times,  
+	code_eu087Times,
 	{
 		0x44,
 		0x40,
@@ -7933,7 +7933,7 @@ const struct IrCode code_eu128Code PROGMEM = {
 	freq_to_timerval(41667),
 	8,		// # of pairs
 	3,		// # of bits per index
-	code_eu128Times,  
+	code_eu128Times,
 	{
 		0x05,
 		0xC4,
@@ -7954,7 +7954,7 @@ const struct IrCode code_eu129Code PROGMEM = {
 	freq_to_timerval(38462),
 	45,		// # of pairs
 	3,		// # of bits per index
-	code_eu129Times,  
+	code_eu129Times,
 	{
 		0x47,
 		0x00,
@@ -7992,7 +7992,7 @@ const struct IrCode code_eu130Code PROGMEM = {
 	freq_to_timerval(38462),
 	45,		// # of pairs
 	3,		// # of bits per index
-	code_eu129Times,  
+	code_eu129Times,
 	{
 		0x47,
 		0x00,
@@ -8022,7 +8022,7 @@ const struct IrCode code_eu131Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu131Times,  
+	code_eu131Times,
 	{
 		0x55,
 		0x55,
@@ -8044,7 +8044,7 @@ const struct IrCode code_eu132Code PROGMEM = {
 	0,              // Non-pulsed code
 	23,		// # of pairs
 	2,		// # of bits per index
-	code_eu069Times,  
+	code_eu069Times,
 	{
 		0x05,
 		0x50,
@@ -8066,7 +8066,7 @@ const struct IrCode code_eu133Code PROGMEM = {
 	freq_to_timerval(38462),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu071Times,  
+	code_eu071Times,
 	{
 		0x55,
 		0x54,
@@ -8086,7 +8086,7 @@ const struct IrCode code_eu134Code PROGMEM = {
 	freq_to_timerval(40000),
 	24,		// # of pairs
 	2,		// # of bits per index
-	code_eu134Times,  
+	code_eu134Times,
 	{
 		0x40,
 		0x0A,
@@ -8105,7 +8105,7 @@ const struct IrCode code_eu135Code PROGMEM = {
 	0,              // Non-pulsed code
 	23,		// # of pairs
 	2,		// # of bits per index
-	code_eu135Times,  
+	code_eu135Times,
 	{
 		0x54,
 		0x45,
@@ -8131,7 +8131,7 @@ const struct IrCode code_eu136Code PROGMEM = {
 	freq_to_timerval(38462),
 	38,		// # of pairs
 	3,		// # of bits per index
-	code_na004Times,  
+	code_na004Times,
 	{
 		0xA0,
 		0x00,
@@ -8162,7 +8162,7 @@ const struct IrCode code_eu137Code PROGMEM = {
 	freq_to_timerval(35714),
 	22,		// # of pairs
 	3,		// # of bits per index
-	code_eu137Times,  
+	code_eu137Times,
 	{
 		0x14,
 		0x95,
@@ -8184,7 +8184,7 @@ const struct IrCode code_eu138Code PROGMEM = {
 	0,              // Non-pulsed code
 	11,		// # of pairs
 	2,		// # of bits per index
-	code_eu138Times,  
+	code_eu138Times,
 	{
 		0x05,
 		0x60,
@@ -8203,7 +8203,7 @@ const struct IrCode code_eu139Code PROGMEM = {
 	0,              // Non-pulsed code
 	30,		// # of pairs
 	3,		// # of bits per index
-	code_eu139Times,  
+	code_eu139Times,
 	{
 		0x64,
 		0x92,
@@ -8350,7 +8350,7 @@ const struct IrCode * const NApowerCodes[] PROGMEM = {
 	&code_na118Code,
 	&code_na119Code,
 	&code_na120Code,
-	&code_na121Code,	
+	&code_na121Code,
 	&code_na122Code,
 	&code_na123Code,
 	&code_na124Code,
@@ -8368,7 +8368,7 @@ const struct IrCode * const NApowerCodes[] PROGMEM = {
 	&code_na136Code,
 #endif
 #endif
-}; 
+};
 
 const struct IrCode * const EUpowerCodes[] PROGMEM = {
 #ifdef EU_CODES
