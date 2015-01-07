@@ -326,7 +326,7 @@ void tvbgone_sleep( void )
   // Shut down everything and put the CPU to sleep
   TCCR0A = 0;           // turn off frequency generator (should be off already)
   TCCR0B = 0;           // turn off frequency generator (should be off already)
-  PORTB |= _BV(LED);       // turn off visible LED
+  PORTB &= ~_BV(LED);      // turn off visible LED
   PORTB &= ~_BV(IRLED);    // turn off IR LED
 
   wdt_disable();           // turn off the watchdog (since we want to sleep
