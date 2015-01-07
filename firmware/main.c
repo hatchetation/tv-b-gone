@@ -202,10 +202,10 @@ int main(void) {
 
   WDTCR = 0;                     // disable WDT while we setup
 
-  DDRB = _BV(LED) | _BV(IRLED);   // set the visible and IR LED pins to outputs
-  PORTB = _BV(LED) |              //  visible LED is off when pin is high
-          _BV(REGIONSWITCH);     // Turn on pullup on region switch pin
-  PORTB &= ~_BV(IRLED);           // IR LED is off when pin is low
+  DDRB = _BV(LED) | _BV(IRLED);  // set the visible and IR LED pins to outputs
+  PORTB = _BV(REGIONSWITCH);     // Turn on pullup on region switch pin
+  PORTB &= ~_BV(IRLED) &         // IR LED is off when pin is low
+	   ~_BV(LED);            // visible LED is off when pin is low
 
   // check the reset flags
   if (i & _BV(BORF)) {    // Brownout
@@ -362,9 +362,9 @@ void delay_ten_us(uint16_t us) {
 // This function quickly pulses the visible LED (connected to PB0, pin 5)
 // This will indicate to the user that a code is being transmitted
 void quickflashLED( void ) {
-  PORTB &= ~_BV(LED);   // turn on visible LED at PB0 by pulling pin to ground
+  PORTB |= _BV(LED);    // turn on visible LED
   delay_ten_us(3000);   // 30 millisec delay
-  PORTB |= _BV(LED);    // turn off visible LED at PB0 by pulling pin to +3V
+  PORTB &= ~_BV(LED);   // turn off visible LED
 }
 
 // This function just flashes the visible LED a couple times, used to
@@ -386,12 +386,11 @@ void flashslowLEDx( uint8_t num_blinks )
   uint8_t i;
   for(i=0;i<num_blinks;i++)
     {
-      // turn on visible LED at PB0 by pulling pin to ground
-      PORTB &= ~_BV(LED);
+      PORTB |= _BV(LED);
       delay_ten_us(50000);         // 500 millisec delay
       wdt_reset();                 // kick the dog
       // turn off visible LED at PB0 by pulling pin to +3V
-      PORTB |= _BV(LED);
+      PORTB &= ~_BV(LED);
       delay_ten_us(50000);	   // 500 millisec delay
       wdt_reset();                 // kick the dog
     }
