@@ -97,8 +97,8 @@ void xmitCodeElement(uint16_t ontime, uint16_t offtime, uint8_t PWM_code )
     // 99% of codes are PWM codes, they are pulses of a carrier frequecy
     // Usually the carrier is around 38KHz, and we generate that with PWM
     // timer 0
-    TCCR0A =_BV(COM0A0) | _BV(WGM01);          // set up timer 0
-    TCCR0B = _BV(CS00);
+    TCCR0A =_BV(COM0B0) | _BV(WGM01);	// set up timer 0, CTC mode
+    TCCR0B = _BV(CS00);			// no prescaling
   } else {
     // However some codes dont use PWM in which case we just turn the IR
     // LED on for the period of time.
