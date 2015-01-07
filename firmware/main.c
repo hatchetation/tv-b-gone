@@ -102,7 +102,7 @@ void xmitCodeElement(uint16_t ontime, uint16_t offtime, uint8_t PWM_code )
   } else {
     // However some codes dont use PWM in which case we just turn the IR
     // LED on for the period of time.
-    PORTB &= ~_BV(IRLED);
+    PORTB |= _BV(IRLED);
   }
 
   // Now we wait, allowing the PWM hardware to pulse out the carrier
@@ -114,7 +114,7 @@ void xmitCodeElement(uint16_t ontime, uint16_t offtime, uint8_t PWM_code )
   TCCR0B = 0;
   // And make sure that the IR LED is off too (since the PWM may have
   // been stopped while the LED is on!)
-  PORTB |= _BV(IRLED);           // turn off IR LED
+  PORTB &= ~_BV(IRLED);           // turn off IR LED
 
   // Now we wait for the specified 'off' time
   delay_ten_us(offtime);
@@ -202,10 +202,10 @@ int main(void) {
 
   WDTCR = 0;                     // disable WDT while we setup
 
-  DDRB = _BV(LED) | _BV(IRLED);   // set the visible and IR LED pins to outputs
-  PORTB = _BV(LED) |              //  visible LED is off when pin is high
-          _BV(IRLED) |            // IR LED is off when pin is high
-          _BV(REGIONSWITCH);     // Turn on pullup on region switch pin
+  DDRB = _BV(LED) | _BV(IRLED);  // set the visible and IR LED pins to outputs
+  PORTB = _BV(REGIONSWITCH);     // Turn on pullup on region switch pin
+  PORTB &= ~_BV(IRLED) &         // IR LED is off when pin is low
+	   ~_BV(LED);            // visible LED is off when pin is low
 
   // check the reset flags
   if (i & _BV(BORF)) {    // Brownout
@@ -326,8 +326,8 @@ void tvbgone_sleep( void )
   // Shut down everything and put the CPU to sleep
   TCCR0A = 0;           // turn off frequency generator (should be off already)
   TCCR0B = 0;           // turn off frequency generator (should be off already)
-  PORTB |= _BV(LED) |       // turn off visible LED
-           _BV(IRLED);     // turn off IR LED
+  PORTB &= ~_BV(LED);      // turn off visible LED
+  PORTB &= ~_BV(IRLED);    // turn off IR LED
 
   wdt_disable();           // turn off the watchdog (since we want to sleep
   delay_ten_us(1000);      // wait 10 millisec
@@ -362,9 +362,9 @@ void delay_ten_us(uint16_t us) {
 // This function quickly pulses the visible LED (connected to PB0, pin 5)
 // This will indicate to the user that a code is being transmitted
 void quickflashLED( void ) {
-  PORTB &= ~_BV(LED);   // turn on visible LED at PB0 by pulling pin to ground
+  PORTB |= _BV(LED);    // turn on visible LED
   delay_ten_us(3000);   // 30 millisec delay
-  PORTB |= _BV(LED);    // turn off visible LED at PB0 by pulling pin to +3V
+  PORTB &= ~_BV(LED);   // turn off visible LED
 }
 
 // This function just flashes the visible LED a couple times, used to
@@ -386,12 +386,11 @@ void flashslowLEDx( uint8_t num_blinks )
   uint8_t i;
   for(i=0;i<num_blinks;i++)
     {
-      // turn on visible LED at PB0 by pulling pin to ground
-      PORTB &= ~_BV(LED);
+      PORTB |= _BV(LED);
       delay_ten_us(50000);         // 500 millisec delay
       wdt_reset();                 // kick the dog
       // turn off visible LED at PB0 by pulling pin to +3V
-      PORTB |= _BV(LED);
+      PORTB &= ~_BV(LED);
       delay_ten_us(50000);	   // 500 millisec delay
       wdt_reset();                 // kick the dog
     }
