@@ -13,6 +13,8 @@
 // Tweak this if neccessary to change timing
 #define DELAY_CNT 11
 
+#define DELAY_BETWEEN 25000 // in tens of us
+
 // Makes the codes more readable. the OCRA is actually
 // programmed in terms of 'periods' not 'freqs' - that
 // is, the inverse!

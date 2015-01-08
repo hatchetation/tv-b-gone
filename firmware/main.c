@@ -300,7 +300,7 @@ int main(void) {
       bitsleft_r=0;
 
       // delay 250 milliseconds before transmitting next POWER code
-      delay_ten_us(25000);
+      delay_ten_us(DELAY_BETWEEN);
 
       // visible indication that a code has been output.
       quickflashLED();
